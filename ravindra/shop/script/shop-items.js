@@ -40,8 +40,8 @@ var itemList = [
     cost: "$6.00",
   }),
   (item6 = {
-    img1: "allimages/bestSelling/lowaChop.jpg",
-    img2: "allimages/bestSelling/lowaChop.jpg",
+    img1: "allimages/bestSelling/beef.jpg",
+    img2: "allimages/bestSelling/beef.jpg",
     rating: 4,
     name: "Beef tenderloin",
     old_cost: null,
