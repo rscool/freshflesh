@@ -1,0 +1,230 @@
+.nav-bar {
+  background-color: #d16667;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+}
+.menuBar {
+  align-items: center;
+}
+.menuBar,
+.nav-bar .middle .fa-times {
+  display: none;
+  font-size: x-large;
+  cursor: pointer;
+}
+.nav-bar .middle .fa-times {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.nav-bar .nav-link {
+  text-decoration: none;
+  color: inherit;
+  /* transition: all 0.2s; */
+  font-size: large;
+  padding: 10px;
+}
+.mobilePlus.fa-caret-down {
+  display: none;
+  cursor: pointer;
+  padding: 0 10px;
+  float: right;
+  font-weight: bold;
+}
+.nav-bar .left,
+.nav-bar .right {
+  flex: 15%;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav-bar .middle {
+  justify-content: center;
+  align-items: center;
+  flex: 50%;
+  padding: 10px;
+}
+
+#navTitles:hover{
+  text-decoration: underline;
+}
+
+.drop-content {
+  display: none;
+  padding: 10px;
+  top: 100%;
+  left: 0;
+  z-index: 3;
+  width: 300px;
+  color: black;
+  background: white;
+  border: 1px solid #c7c7c7;
+  animation: linkAnim 0.2s;
+}
+.nav-bar .right .drop-content {
+  padding: 0;
+  right: 0;
+  width: max-content;
+  left: initial;
+}
+.nav-bar .right .drop-content .nav-link {
+  font-size: 14px;
+}
+
+.nav-bar .right .drop-content input {
+  border: none;
+  padding: 10px;
+}
+.nav-bar .right .drop-content input:focus {
+  outline: none;
+}
+
+
+@media screen and (min-width: 1056px) {
+  .dropdown:hover .drop-content {
+    display: block;
+  }
+  .drop-content {
+    background: #f1f1f1;
+  }
+}
+@keyframes linkAnim {
+  from {
+    transform: translateY(50%); opacity: 0;
+  }
+  to {
+    transform: translateY(0%); opacity: 1;
+  }
+}
+.drop-content .nav-link {
+  display: block;
+}
+.middle .dropdown:nth-of-type(3) .drop-content,
+.middle .dropdown:nth-of-type(4) .drop-content {
+  width: 400px;
+  left: -100px;
+}
+.middle .dropdown:last-of-type .drop-content {
+  left: -150px;
+}
+.drop-content .nav-link {
+  padding: 5px;
+}
+#wishCount, #cartCount {
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  padding: 2px 4px;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+}
+#cartCount {
+  right: initial;
+  left: 20px;
+}
+
+@media screen and (max-width: 1055px) {
+  .nav-bar .menuBar {
+    display: flex;
+  }
+  .nav-bar .middle .fa-times {
+    display: inline-block;
+  }
+  .mobile {
+    width: 300px !important;
+  }
+  .nav-bar .middle {
+    width: 0;
+    background-color: white;
+    color: black;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0;
+    padding-top: 40px;
+    z-index: 4;
+    height: 100%;
+  }
+  .nav-bar .middle .ver-bar::after {
+    display: none;
+  }
+  .nav-bar .left {
+    justify-content: flex-start;
+  }
+  .nav-bar .right {
+    justify-content: flex-end;
+  }
+  .nav-bar .middle .nav-link a.nav-link {
+    padding-left: 0;
+  }
+  .nav-bar .middle .nav-link:not(:nth-child(2)) {
+    width: 100%;
+  }
+  .mobilePlus.fa-caret-down {
+    display: inline-block;
+  }
+  .middle .drop-content {
+    border: none;
+    color: inherit;
+  }
+  .nav-bar .drop-content p.bold {
+    margin: 0;
+  }
+  .middle .drop-content.abs {
+    position: initial;
+  }
+  .middle .drop-content * {
+    font-size: medium;
+  }
+  .middle .drop-content .flex {
+    flex-direction: column;
+  }
+  .middle .dropdown:nth-of-type(3) .drop-content,
+  .middle .dropdown:nth-of-type(4) .drop-content {
+    width: 100%;
+    padding: 0;
+    left: 0;
+  }
+  .dropBlock {
+    display: block !important;
+  }
+  a.nav-link:hover {
+    color: #bf2d5a;
+  }
+  .nav-bar .middle::-webkit-scrollbar {
+    width: 10px;
+  }
+  .nav-bar .middle::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .nav-bar .middle::-webkit-scrollbar-thumb {
+    background: rgb(227, 88, 129)
+  }
+  .nav-bar .middle::-webkit-scrollbar-thumb:hover {
+    background: rgb(225, 130, 159)
+  }
+}
+@media screen and (max-width: 490px) {
+  .nav-bar .left,
+  .nav-bar .right {
+    flex: initial;
+    padding: 0;
+  }
+  .nav-bar .left img {
+    width: 100%;
+    min-width: 100px;
+  }
+  .nav-bar {
+    justify-content: space-between;
+  }
+}
+.drop-content a.nav-link:hover {
+  color: #bf2d5a;
+}

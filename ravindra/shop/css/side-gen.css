@@ -1,0 +1,52 @@
+.content {
+  justify-content: space-evenly;
+}
+.sideLinks {
+  width: 23%;
+  max-width: 250px;
+}
+.featured-p {
+  width: 70%;
+}
+.links {
+  flex-direction: column;
+  color: gray;
+}
+.links a {
+  /* margin-bottom: 5px; */
+  padding: 5px;
+  margin: 3px;
+}
+.links a:hover {
+  color: rgb(128, 53, 76);
+}
+.sideLinks .prodContainer {
+  justify-content: space-between;
+  font-size: small;
+}
+.sideLinks .prodContainer .prod {
+  width: 45%;
+}
+.tags a,
+.comments a {
+  color: gray;
+  display: inline-block;
+  padding: 5px;
+  margin: 3px;
+}
+.tags a {
+  background-color: #eee;
+  font-size: smaller;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+  .featured-p, .sideLinks {
+    width: 90%;
+    margin: auto;
+    max-width: unset;
+  }
+}

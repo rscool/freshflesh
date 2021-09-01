@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>Nav-bar</title>
+    <link rel="stylesheet" href="../css/gen.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="login">
+      <div class="header flex">
+        <h2>My Account</h2>
+        <p><a href="../../index.html">Home </a> &raquo; Account</p>
+      </div>
+      <div class="content flex">
+        <div class="left">
+          <form action="">
+            <h2>Login</h2>
+            <label name="username">
+              Username or email address<span class="reqd"></span><br />
+              <input type="text" pattern="^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,10})$" title="Enter a valid email address" required/> </label
+            ><br /><br />
+            <label name="pswd">
+              Password<span class="reqd"></span><br />
+              <input type="password" required/> </label
+            ><br /><br />
+            <label><input type="checkbox" />Remember Me</label><br /><br />
+            <button type="submit" class="btn btnhover">Login</button
+            ><br /><br />
+            <a href="#forgot">Forgot your passowrd?</a>
+          </form>
+        </div>
+        <div class="right">
+          <form action="">
+            <h2>Registration</h2>
+            <label name="username">
+              Email address<span class="reqd"></span><br />
+              <input type="text" pattern="^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,10})$" title="Enter a valid email address" required/> </label
+            ><br /><br />
+            <p style="color: gray; letter-spacing: 0.6px">
+              A password will be sent to your email address.<br /><br /><br />Your
+              personal data will be used to support your experience throughout
+              this website, to manage access to your account, and for other
+              purposes described in our
+              <a style="color: initial" href="#">privacy policy</a>.
+            </p>
+            <button type="submit" class="btn btnhover">Register</button>
+          </form>
+        </div>
+        <div id="forgot" class="modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <header class="container">
+                <a href="#" class="closebtn">×</a>
+                Lost your password? Please enter your username or email address.
+                You will receive a link to create a new password via email.
+              </header>
+              <div class="container">
+                <form target="">
+                  <label name="email"
+                    >Username or email<span class="reqd"></span><br /><br />
+                    <input type="text" pattern="^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,10})$" title="Enter a valid email address" required/></label
+                  ><br /><br />
+                  <button type="submit" class="btn btnhover">
+                    Reset Password
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

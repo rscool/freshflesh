@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Merriweather', Arial, Helvetica, sans-serif;
+    /* font-family: sans-serif; */
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald';
+}
+.table-box p{
+    font-size: 15px;
+}
+.upper{ 
+	padding: 70px 50px;
+	background: url("final.jpg");
+	background-size: cover;
+	color: white;
+	background-attachment: fixed;
+}
+#upper-left{
+	font-size: 30px;
+	font-family: 'Oswald';
+	float: left;
+}
+#upper-right{
+	float: right;
+}
+#upper-right a{
+	color: white;
+	text-decoration: double;
+}
+
+.content{
+    align-items: center;
+    text-align: center;
+}
+table {
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+  
+.table-box
+{
+    margin: 30px auto;
+}
+
+.table-row{
+    display: table;
+    width: 90%;
+    margin: 10px auto;
+    font-family: sans-serif;
+    background: transparent;
+    padding: 2px 0;
+    color: #555;
+    font-size: 13px;
+    box-shadow: 0 1px 4px 0px rgba(0,0,50,0.3);
+}
+.table-head{
+    background: #d16667;
+    box-shadow: none;
+    color: #fff;
+    font-weight: 600;
+}
+.table-head .table-cell{
+    border-right: none;
+}
+.table-cell{
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    padding: 4px 0;
+    border-right: 1px solid #d6d4d4;
+    vertical-align: middle;
+}
+.table-row .first-cell{
+    text-align: left;
+    max-width: 1px;
+    padding-left: 10px;
+}
+.last-cell{
+    border-right: none;
+}
+.code{
+    text-align: center;
+}
+.btn {
+    background-color: #d16667;
+    color: white;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    width: auto;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.btn:hover {
+    background-color: #d16667;
+}
+
+.btn2 {
+    background-color: #d16667;
+    color: white;
+    width: auto;
+    border: none;
+    padding: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 15px;
+} 
+.btn2:hover {
+    background-color: #d16667;
+}
+
+@media only screen and (max-width: 600px) {
+  .table-row {
+    font-size: 11px;
+  }
+}

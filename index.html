@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>FreshMeat</title>
+    <link rel="shortcut icon" type="image/x-icon" href="allimages/logo.ico" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="ravindra/css/footer.css" />
+    <link rel="stylesheet" href="ravindra/css/index.css" />
+    <link rel="stylesheet" href="ravindra/css/gen.css" />
+    <link rel="stylesheet" href="ravindra/css/nav.css" />
+    <link rel="stylesheet" href="ravindra/css/prodCSS.css" />
+
+    <link rel="stylesheet" href="ravindra/html/cssFiles/shop4.css" />
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="ravindra/shop/script/addtocart.js"></script>
+    <script src="ravindra/shop/script/shop-items.js"></script>
+    
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Nav-bar -->
+    <div
+      class="includeHTML rel"
+      style="z-index: 3; position: sticky; top: 0"
+      w3-include-html="ravindra/html/nav.html"
+    ></div>
+
+    <!-- Slideshow -->
+    <div class="slideshow rel">
+      <a class="prev abs" onclick="changeSlide(-1)" href="javascript:void(0);"
+        >&#10094;</a
+      >
+      <a class="next abs" onclick="changeSlide(1)" href="javascript:void(0);"
+        >&#10095;</a
+      >
+      <div class="slidesContainer">
+        <div class="slide rel">
+          <div class="content abs">
+            <p class="heading"></p>
+          </div>
+          <img src="allimages/s3.jpg" alt="Slide 1" />
+        </div>
+        <div class="slide rel">
+          <div class="content abs">
+            <p class="heading"></p>
+          </div>
+          <img src="allimages/s2.jpg" alt="Slide 2" />
+        </div>
+        <div class="slide rel">
+          <div class="content abs">
+            <p class="heading"></p>
+          </div>
+          <img src="allimages/s1.jpg" alt="Slide 2" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Categories -->
+
+    <div class="includeHTML" w3-include-html="ravindra/html/shop4.html"></div>
+    <!-- <div id="includedContent"></div> -->
+    <br />
+
+    <!-- New Products -->
+    <div class="new-p rel">
+      <div class="container text-center mt-3">
+        <!-- <img class="img" src="a.jpg" alt=".."> -->
+        <h2 style="font-family: sans-serif" class="htag">
+          Best Selling Products
+        </h2>
+        <br />
+      </div>
+      <!-- <hr class="hrBar" style="width: 100px; height: 3px" /> -->
+      <a class="prev abs" onclick="newProdRight(-1)" href="javascript:void(0);"
+        >&#10094;</a
+      >
+      <a class="next abs" onclick="newProdRight(1)" href="javascript:void(0);"
+        >&#10095;</a
+      >
+      <div class="forScroll rel">
+        <div class="prodContainer flex rel">
+          <script>
+            let prodParent2 = document.querySelector(
+              ".new-p .prodContainer.flex"
+            );
+            makeItem(item6, prodParent2);
+            makeItem(item11, prodParent2);
+            makeItem(item8, prodParent2);
+            makeItem(item13, prodParent2);
+            makeItem(item6, prodParent2);
+            makeItem(item11, prodParent2);
+            makeItem(item8, prodParent2);
+            makeItem(item13, prodParent2);
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <hr class="hrBar" />
+
+
+    <!-- Featured Products -->
+
+    <!-- Featured Products -->
+    <div class="featured-p rel">
+      <div class="container text-center mt-3">
+        <!-- <img class="img" src="a.jpg" alt=".."> -->
+        <h2 style="font-family: sans-serif" class="htag">
+          Featured Products
+        </h2>
+        <br />
+      </div>
+      <!-- <hr class="hrBar" style="width: 100px; height: 3px" /> -->
+      <div class="prodContainer flex">
+        <script>
+          let prodParent = document.querySelector(
+            ".featured-p .prodContainer.flex"
+          );
+          makeItem(item13, prodParent);
+          makeItem(item7, prodParent);
+          makeItem(item15, prodParent);
+          makeItem(item17, prodParent);
+          makeItem(item5, prodParent);
+          makeItem(item16, prodParent);
+        </script>
+      </div>
+      <button
+        onclick="window.open('Aakash/shop/html/shop.html','_parent')"
+        type="button"
+        class="btn btnhover"
+      >
+        View More Products
+      </button>
+    </div>
+    <hr class="hrBar" />
+
+    <!-- Cutting and Delivery -->
+
+    <div class="container text-center mt-3">
+      <!-- <img class="img" src="a.jpg" alt=".."> -->
+      <h2 style="font-family: sans-serif" class="htag">
+        Cutting & Delivery
+      </h2>
+      <br />
+    </div>
+
+    <div class="container mt-3">
+      <div class="d-flex justify-content-start mb-3 or">
+        <div class="p-1 a">
+          <img
+            class="image"
+            src="allimages/cuttingAndDelivery/alwaysFresh.jpg"
+            alt="..."
+          />
+        </div>
+        <div class="p-2 b">
+          <img src="allimages/cuttingAndDelivery/01.svg" alt="..." />
+          <h3 class="h3tag">Always fresh</h3>
+          <p class="ptag">
+            All our products have the highest quality and are thoroughly checked
+            before sending.
+          </p>
+          <br /><br />
+          <hr class="hrtag" />
+        </div>
+      </div>
+      <div class="d-flex justify-content-start mb-3 or">
+        <div class="p-2 c">
+          <img src="allimages/cuttingAndDelivery/02.svg" alt="..." />
+          <h3 class="h3tag">Quality certificates</h3>
+          <p class="ptag">
+            All our products have the highest quality and are thoroughly checked
+            before sending.
+          </p>
+          <br /><br />
+          <hr class="hrtag" />
+        </div>
+        <div class="p-2 d">
+          <img
+            class="image"
+            src="allimages/cuttingAndDelivery/qualityCertificates.jpg"
+            alt="..."
+          />
+        </div>
+      </div>
+      <div class="d-flex justify-content-start mb-3 or">
+        <div class="p-2">
+          <img
+            class="image"
+            src="allimages/cuttingAndDelivery/deliveryOnTime.jpg"
+            alt="..."
+          />
+        </div>
+        <div class="p-2">
+          <img src="allimages/cuttingAndDelivery/03.svg" alt="..." />
+          <h3 class="h3tag">Delivery on time</h3>
+          <p class="ptag">
+            All our products have the highest quality and are thoroughly checked
+            before sending.
+          </p>
+          <br /><br />
+          <hr class="hrtag" />
+        </div>
+      </div>
+    </div>
+
+    <hr class="hrBar" />
+
+    <!-- Highest Quality -->
+
+    <div class="shipping col-12">
+      <div class="shipping_left col-6 col-s-6">
+        <img
+          src="allimages/highestQuality/highest-quality.png"
+          style="max-width: 100%"
+        />
+      </div>
+
+      <div class="shipping_right col-6 col-s-6">
+        <br /><br /><br />
+       
+        <div class="container text-center mt-3">
+          <!-- <img class="img" src="a.jpg" alt=".."> -->
+          <h2 style="font-family: sans-serif" class="htag">
+            Highest Quality
+          </h2>
+          <br />
+        </div>
+
+        <button class="collapsible">Huge choice of vegetables
+        </button>
+        <div class="content">
+          <p>
+            Potato from each corner of the world, unique sorts of tomatoes, diversified types cucumbers – all these and lots more are presented in our online shop where you can taste new variations of favorite products.
+          </p>
+        </div>
+        <button class="collapsible">Thousands of satisfied clients
+        </button>
+        <div class="content">
+          <p>
+            Our main goal is to make our customers happy and to bring healthy food to their tables. Having taken into account all notices, we’ve developed the most profitable system of bonuses for all loyal customers.
+          </p>
+        </div>
+        <button class="collapsible">Only fresh products
+        </button>
+        <div class="content">
+          <p>
+            We deliver only fresh products and value our status in our customers’ eyes. Before delivering, we thoroughly check each item.
+          </p>
+        </div>
+        <button class="collapsible">Many years on the Market
+        </button>
+        <div class="content">
+          <p>
+            Our company’s image has been built during seven years of dedicated and careful work, and we are proud of the scale that we’ve achieved so far. We gained the trust of customers on the market and keep on working on it.
+          </p>
+        </div>
+        <button class="collapsible">Fresh products
+        </button>
+        <div class="content">
+          <p>
+            We deliver only fresh products and value our status in our customers’ eyes. Before delivering, we thoroughly check each item.
+          </p>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <hr class="hrBar" />
+
+    <br>
+
+    <!-- News & Events -->
+
+    <div class="container text-center mt-3">
+      <!-- <img class="img" src="a.jpg" alt=".."> -->
+      <h2 style="font-family: sans-serif" class="htag">
+        News and Events
+      </h2>
+      <br />
+    </div>
+
+    <div class="container">
+      <div class="d-flex flex-row ml-2 or">
+        <div
+          onclick="window.open('add.html','_parent')"
+          class="card ml-4 text-center or"
+          style="width: 24rem; cursor: pointer"
+        >
+          <img
+            class="card-img-top"
+            src="allimages/cuttingAndDelivery/vegetable diet.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h2><i class="itah">Vegetable Smoothie Diet – Yes or No?</i></h2>
+            <p class="ptag">August 31, 2021</p>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+        <div
+          onclick="window.open('add2.html', '_parent')"
+          class="card ml-4 text-center or"
+          style="width: 24rem; cursor: pointer"
+        >
+          <img
+            class="card-img-top"
+            src="allimages/cuttingAndDelivery/latest tendencies.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h2><i class="itah">Latest Tendencies in the Culinary World</i></h2>
+            <p class="ptag">August 31, 2021</p>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+        <div
+          onclick="window.open('add3.html', '_parent')"
+          class="card ml-4 text-center or"
+          style="width: 24rem; cursor: pointer"
+        >
+          <img
+            class="card-img-top"
+            src="allimages/cuttingAndDelivery/5 Quick.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h2><i class="itah">5 Quick and Nutritious Breakfast Ideas</i></h2>
+            <p class="ptag">August 31, 2021</p>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+   
+    
+
+    <br /><br />
+
+    <!-- Footer -->
+    <div class="includeHTML" w3-include-html="ravindra/html/footer.html"></div>
+    <!-- <script src="ravindra/scripts/footer.js"></script> -->
+
+    <script src="ravindra/scripts/index.js"></script>
+    <script src="ravindra/scripts/nav.js"></script>
+    <!-- Include HTML Script -->
+
+    <script src="jquery.js"></script>
+    <script>
+      $(function () {
+        $("#includedContent").load("ravindra/html/shop4.html");
+      });
+    </script>
+
+    <script>
+      function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        z = document.getElementsByClassName("includeHTML");
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          file = elmnt.getAttribute("w3-include-html");
+          if (file) {
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+              if (this.readyState == 4) {
+                if (this.status == 200) {
+                  elmnt.innerHTML = this.responseText;
+                }
+                if (this.status == 404) {
+                  elmnt.innerHTML = "Page not found.";
+                }
+                elmnt.removeAttribute("w3-include-html");
+                includeHTML();
+              }
+            };
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /* Exit the function: */
+            return;
+          }
+        }
+      }
+      includeHTML();
+    </script>
+    <script>
+      EventListenFn();
+
+      window.onload = () => {
+        var navRightBtn = document.querySelectorAll(
+          ".right .dropdown .nav-link"
+        );
+        for (let i = 0; i < navRightBtn.length; i++) {
+          navRightBtn[i].addEventListener("click", function () {
+            this.nextElementSibling.classList.toggle("dropBlock");
+          });
+        }
+        cartCountUpdate();
+        wishCountUpdate();
+      };
+    </script>
+
+    <!-- highestQuality collapsible script -->
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

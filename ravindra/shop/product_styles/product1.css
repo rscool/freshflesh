@@ -1,0 +1,116 @@
+.relatedProducts .col-sm-3 {
+  cursor: pointer;
+}
+
+.zoom-within-container {
+    height: 300px; /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+  .zoom-within-container img {
+    transition: transform .5s ease;
+  }
+  .zoom-within-container:hover img {
+    transform: scale(1.5);
+  }
+  
+form {
+    width: 300px;
+  }
+  
+  .value-button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+    margin-top:0;
+    text-align: center;
+    padding: 11px 0;
+    background-color: white;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .cartBtn{
+      width:70%;
+      height:50px;
+      background-color: #80354C;
+      border-color: transparent;
+      color:white;
+  }
+  .cartBtn:hover{
+      background-color: black;
+  }
+  
+  .value-button:hover {
+    cursor: pointer;
+  }
+  
+  form #decrease {
+    margin-right: -4px;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  form #increase {
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  input#number {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+
+  .second{
+      text-align: center;
+  }
+  .info1,.info2,.info3{
+      text-align: left;
+      border:2px solid rgb(192, 192, 192);
+      border-radius:5px;
+      padding:10px;
+  }
+  .relatedProducts{
+      text-align: center;
+  }
+  .compare1{
+    background-color: grey;
+    padding:10px;
+}
+.compare2{
+    text-align: center;
+}
+.b11:hover,.b12:hover,.b13:hover,.b14:hover,.b21:hover,.b22:hover,.b23:hover,.b24:hover{
+    background-color:black;
+    
+}
+.b11,.b12,.b13,.b14,.b21,.b22,.b23,.b24,.b31,.b32,.b33,.b34,.b41,.b42,.b43,.b44,
+.b51,.b52,.b53,.b54,.b61,.b62,.b63,.b64,.b71,.b72,.b73,.b74,.b81,.b82,.b83,.b84{
+    border-color:transparent;
+    background-color: #80354C;
+    width:27px;
+    height:27px;
+    padding:2px;
+}
+  
+

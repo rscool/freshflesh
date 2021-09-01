@@ -1,0 +1,199 @@
+/**************** extend css start ****************/
+/**************** extend css start ****************/
+/**************** common css start ****************/
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,500,600,700|Roboto:400,500,700&display=swap");
+/* line 3, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* line 9, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+.message_submit_form:focus {
+  outline: none;
+}
+
+/* line 12, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+input:hover, input:focus, .form-control:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 0.2rem transparent;
+  border: 1px solid #eaecee;
+}
+
+/* line 18, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+.gray_bg {
+  background-color: #f7f7f7;
+}
+
+/* line 21, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+.section_padding {
+  padding: 140px 0px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 21, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+  .section_padding {
+    padding: 100px 0px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 21, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+  .section_padding {
+    padding: 70px 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 21, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+  .section_padding {
+    padding: 70px 0px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 21, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+  .section_padding {
+    padding: 70px 0px;
+  }
+}
+
+/* line 36, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+.single_padding_top {
+  padding-top: 140px !important;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 36, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+  .single_padding_top {
+    padding-top: 70px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 36, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+  .single_padding_top {
+    padding-top: 70px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 36, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+  .single_padding_top {
+    padding-top: 70px !important;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 36, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+  .single_padding_top {
+    padding-top: 100px !important;
+  }
+}
+
+/* line 51, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+.padding_top {
+  padding-top: 140px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 51, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+  .padding_top {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 51, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+  .padding_top {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 51, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+  .padding_top {
+    padding-top: 70px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 51, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+  .padding_top {
+    padding-top: 70px;
+  }
+}
+
+/* line 66, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+.padding_bottom {
+  padding-bottom: 140px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 66, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+  .padding_bottom {
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 66, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+  .padding_bottom {
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* line 66, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+  .padding_bottom {
+    padding-bottom: 70px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 66, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+  .padding_bottom {
+    padding-bottom: 70px;
+  }
+}
+
+/* line 81, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+a {
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 84, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+a:hover {
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 90, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #182028;
+  font-family: "Oswald", sans-serif;
+}
+
+/* line 94, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+p {
+  font-family: "Roboto", sans-serif;
+  line-height: 28px;
+  font-size: 15px;
+  margin-bottom: 0px;
+  color: #888888;
+  font-weight: 300;
+}
+
+/* line 102, ../../01 cl html template/187 Shotgear Photography/187 Shotgear Photography Html/sass/_common.scss */
+h2 {
+  font-size: 44px;
+  line-height: 28px;
+  color: #182028;
+  font-weight: 600;
+  line-height: 1.222;
+}
+

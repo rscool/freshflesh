@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>Nav-bar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav class="nav-bar flex" style="height: 90px !important;">
+      <div class="menuBar flex" onclick="menuF()"><span class="fa fa-bars" ></span></div>
+      <div class="left flex">
+        <a href="index.html"><img src="allimages/logo.png" alt="Logo" /></a>
+      </div>
+      <div class="middle flex">
+        <span onclick="menuF()" class="fa fa-times"></span>
+
+        <a href="index.html" class="nav-link rel" id="navTitles">Home</a><span class='mobilePlus fa fa-caret-down'></span>
+        
+        <a href="mustafa_shop/shop.html" class="nav-link rel" id="navTitles">Shop</a><span class='mobilePlus fa fa-caret-down'></span>
+        
+        <div class="nav-link dropdown  rel ">
+          <a class="nav-link" id="navTitles" href="mayank_fish_meat/fish.html">Fish</a><span class='mobilePlus fa fa-caret-down'></span>
+          <div class="drop-content abs">
+            <a href="mayank_fish_meat/fish.html" class="nav-link">Seafood</a>
+            
+          </div>
+        </div>
+        
+        <div class="nav-link dropdown  rel">
+          <a class="nav-link" id="navTitles" href="mayank_fish_meat/Meat.html">Meat</a><span class='mobilePlus fa fa-caret-down'></span>
+          <div class="drop-content abs">
+            <a href="mayank_fish_meat/beef.html" class="nav-link">Beef</a>
+            <a href="mayank_fish_meat/chicken.html" class="nav-link">Chicken</a>
+            <a href="mayank_fish_meat/lamb.html" class="nav-link">Lamb</a>
+            <a href="mayank_fish_meat/rabbit.html" class="nav-link">Rabbit</a>
+          </div>
+        </div>
+
+        <div class="nav-link dropdown  rel">
+          <a class="nav-link" id="navTitles" href="Rushikesh_About/index.html">About Us</a><span class='mobilePlus fa fa-caret-down'></span>
+          <div class="drop-content abs">
+            <a href="Rushikesh_About/index.html" class="nav-link">Blog</a>
+            <a href="Rushikesh_About/contact.html" class="nav-link">Contact Us</a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="right flex">
+        <div class="dropdown rel" >
+          <a href="javascript:void(0);" class="nav-link fa fa-search"></a>
+          <!-- <div class="drop-content abs"><input type="text" placeholder="Search..."/><button type="submit" class="btn fa fa-search" ></button></div> -->
+          <div class="drop-content abs">
+            <a href="#" class="nav-link">Search</a>
+          </div>
+        </div>
+        <div class="dropdown rel">
+          <a href="javascript:void(0);" class="nav-link fa fa-user-o"></a>
+          <div class="drop-content abs">
+            <a href="#" class="nav-link">Login/SignUp</a>
+          </div>
+        </div>
+        <!-- <a href="ravindra/shop/html/wishlist.html" class="nav-link rel fa fa-heart-o"><span id="wishCount" >0</span></a> -->
+        <a href="ravindra/shop/Cart Section/cart.html" class="nav-link rel fa fa-shopping-bag"><span id="cartCount" >0</span>
+          &nbsp;<span id="totalCost"></span>
+        </a>
+      </div>
+    </nav>
+  </body>
+</html>

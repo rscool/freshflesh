@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    
+    <link rel="stylesheet" href="cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/b3aafdc728.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+    <script src="../script/addtocart.js"></script>
+    <style>
+      .emptyCart {
+        text-align: center;
+        font-size: larger;
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="upper">
+      <p>
+        <span id="upper-left">Cart</span>
+        <span id="upper-right">
+          <a href="../../../index.html">Home </a>&raquo;<a
+            href="../../../mustafa_shop/shop.html"
+          >
+            Shop </a
+          >&raquo; Cart</span
+        >
+      </p>
+    </div>
+    <br />    
+    <br />
+    <div class="emptyCart table-head table-row">Your cart is empty.</div>
+    <div class="table-box">
+      <div class="table-row table-head">
+        <div class="table-cell first-cell">
+          <p>#</p>
+        </div>
+        <div class="table-cell">
+          <p>Products</p>
+        </div>
+        <div class="table-cell">
+          <p>Price</p>
+        </div>
+        <div class="table-cell">
+          <p>Quantity</p>
+        </div>
+        <div class="table-cell last-cell">
+          <p>Remove item</p>
+        </div>
+      </div>
+    </div>
+    <div class="code">
+      <div>
+        <button onclick="window.open('../../../mustafa_shop/shop.html', '_parent')" class="btn">RETURN TO SHOP</button>
+      </div>
+      <div>
+        <button id="checkout" class="btn">PROCEED TO BUY</button>
+      </div>
+    </div>
+
+
+
+    <script>
+      getAllItem();
+      let removeBtn = document.querySelectorAll(
+        ".table-box > .table-row button.btn2"
+      );
+      for (let i = 0; i < removeBtn.length; i++) {
+        removeBtn[i].addEventListener("click", (e) => {
+          let item = e.currentTarget.parentElement.parentElement;
+          removeItem(item);
+        });
+      }
+    </script>
+    <script>
+      let z = JSON.parse(localStorage.getItem("MakeupItem"));
+      if (z == null) {
+        document.querySelector('.table-box').style.display = "none";
+        document.querySelector('#checkout').style.display = 'none';
+        document.getElementsByClassName("emptyCart")[0].style.display = "block";
+      } else {
+        emptyCheck();
+      }
+    </script>
+  </body>
+</html>

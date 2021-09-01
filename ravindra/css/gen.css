@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.abs {
+  position: absolute;
+}
+.rel {
+  position: relative;
+}
+a {
+  
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s;
+}
+.heading {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+.hrBar{
+  background-color: #d16667;
+  border: none;
+  margin: 2px;
+}
+.bold {
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: medium;
+}
+.btn {
+  border: none;
+  background-color: #d16667;
+  padding: 10px 20px;
+  color: white;
+  font-size: medium;
+  cursor: pointer;
+}
+.btnhover {
+  transition: all 0.2s;
+}
+.btnhover:hover {
+  transform: scaleY(1.2);
+  border-radius: 10px;
+}
+.ver-bar::after {
+  content: "";
+  background: #9c6878;
+  width: 1px;
+  height: 15px;
+  right: 0;
+  position: absolute;
+  margin: auto 0;
+}
+.reqd::after {
+  content: ' *';
+  color: red;
+}
